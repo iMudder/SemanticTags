@@ -16,186 +16,93 @@ First Week Class Assigmnet Semantic Tags:
 - Use any you like, but they must be used properly
 - Push your repository up to Github, and submit the URL of the repository
 
-Tags use in this document:
-
-Tag            Description
-<html>         Beginning and End of the HTML Page
-<head>         Area containing metadata about the HTML Page
-<title>        What is represented in the Tab of a Web Browser
-<link>         Declair a Link (in my case a Favicon)
-<article>      Defines an article
-<section>      Defines a section in a document
-<table>        The container of a Table
-<tr>           Represents a row of cells in a table
-<th>           Represents a header cell in a table
-<td>           Represents a data cell in a table
-<ul>           Unordered (non-sequencial) List
-<ol>           Ordered (sequencial) List
-<li>           List Element
-<a>            A link 
-<img>          Source location and parameters for a placed image
-<br>           A Line Break
-<hr>           A Horizonal Rule / Line Break
-<strong>       Defines an area containing Bold Text
-<footer>       Defines a footer for a document or section
-
-Example of Semantic Tags, source http://www.w3schools.com/html/html5_semantic_elements.asp
-
-Tag            Description
-<article>      Defines an article
-<aside>        Defines content aside from the page content
-<details>      Defines additional details that the user can view or hide
-<figcaption>   Defines a caption for a <figure> element
-<figure>       Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
-<footer>	   Defines a footer for a document or section
-<header>	   Specifies a header for a document or section
-<main>	       Specifies the main content of a document
-<mark>	       Defines marked/highlighted text
-<nav>	       Defines navigation links
-<section>	   Defines a section in a document
-<summary>	   Defines a visible heading for a <details> element
-<time>	       Defines a date/time
-
-Additional Tags (HTML Tags and HTML 5 Alternatives), source http://www.w3schools.com/tags/default.asp
+Tags use in this document: html, head, meta, link, body, main, h1, figure, figcaption, article, p, section, h2, ul, li, a href, ul, ol, nav, h3, aside, h4, details, summary, footer, img, cite, blockquote
 
 -->
     
 <body>
-    <article> <!-- Article about Whois Bruce -->
-        
-        <table border="5" cellpadding="5">
-            <tr>
-                <th rowspan="2" valign="top">
-                    <img src="images/Bruce.jpg" alt="Bruce Perry @ 50th Anniversary" width="100">
-                </th>
-                <th valign="top" align="left" width="500">
-                    <strong>Bruce Perry:</strong>
-                    Creative, Techie or somewhere in between
-                </th>
-            </tr>
-            <tr>
-                <th valign="top" align="left" width="450">
-"Vermont, a great place to grow up, but I don't want to live there."<br><br>
-
-Since leaving Vermont, I have lived in Florida, the Midwest, Boston and now in the Pacific Northwest (PNW). I wanted to move to the PNW in the early 90s after I graduated from College in the greater St. Louis area, but decided to go back to New England and give the North East another shot.<br><br>
-
-Needless to say it didn't stick and I find myself in the PNW where I have wanted to be those many years (either PNW or Alaska ... still a toss up).<br><br>
-
-What's there to do in the PNW?<br>
-
-                    <ul>
-                        <li>Winter Sports</li>
-                        <ol>
-                            <li>Snowboarding</li>
-                            <li>Snowshoeing</li>
-                            <li>Sleding</li>
-                            <li>Outside Chillin'</li>
-                        </ol>
-                        <li>Computers</li>
-                        <ul>
-                            <li>Infrastructure</li>
-                            <li>Graphics</li>
-                            <li>Development</li>
-                            <li>User Experience Prototyping</li>
-                            <ul>
-                                <li>Paper Prototype</li>
-                                <li>Low Fi (Balsamiq)</li>
-                                <li>Middle Fi (Axure)</li>
-                                <li>High Fi (HTML / CSS)</li>
-                            </ul>
-                        </ul>
-                    </ul>
-
-One last thought ... content to be added tonight.<br>
-
-                </th>
-            </tr>
-        </table>
-        
-    </article>
-    <hr>
+  
+  <main>
     
-    <section> <!-- Extended ASCII Charactors -->
+    <h1>Bruce Perry</h1>
+    
+    <figure>
+      <img src="images/Bruce.jpg" alt="Bruce Perry @ 50th Anniversary" width="100">
+      <figcaption>TEMP</figcaption>
+    </figure>
+    
+    <article>
+      <p>"Vermont, a great place to grow up, but I don't want to live there."</p>
+      <p>Since leaving Vermont, I have lived in Florida, the Midwest, Boston and now in the Pacific Northwest (PNW). I wanted to move to the PNW in the early 90s after I graduated from College in the greater St. Louis area, but decided to go back to New England and give the North East another shot.</p>
+      <p>Needless to say it didn't stick and I find myself in the PNW where I have wanted to be those many years (either PNW, Montana or Alaska ... still a toss up).</p>
+    </article>
+    
+    <section>
+      <h2>Winter Sports Navigation</h2>
+      <nav>
+        <ul>
+          <li><a href="http://4.bp.blogspot.com/_gfXupHOEhH0/TKJYOHDKxJI/AAAAAAAASJ8/2e0TFuZuFoQ/s1600/snowboarding-wallpaper-9.jpg" target="_blank">Snowboarding</a></li>
+          <li><a href="http://www.chaletaustria.co.uk/cmsUploads/activity/images/01.%20SledgingAustrianAlps.jpg" target="_blank">Sledging</a></li>
+          <li><a href="http://1.bp.blogspot.com/_ajoZPn2ETc4/TSJV-wyVETI/AAAAAAAACjo/kh_mccVXF_0/s1600/Snowshoeing.jpg" target="_blank">Snowshoeing</a></li>
+          <li><a href="https://c1.staticflickr.com/9/8308/7786268936_cf562da249_z.jpg" target="_blank">Outside Chillin'</a></li>
+        </ul>
+      </nav>
+      <h3>Computer Stuff</h3>
+      <ol>
+        <li>Infrastructure</li>
+        <li>Graphics</li>
+        <li>User Experience Prototyping</li>
+        <ul>
+          <li>Paper Prototype</li>
+          <li>Low <abbr title="fidelity">Fi</abbr> (Balsamiq)</li>
+          <li>Middle <abbr title="fidelity">Fi</abbr> (Axure)</li>
+          <li>High <abbr title="fidelity">Fi</abbr> (HTML / CSS)</li>
+        </ul>
+      </ol>
+    </section>
+  
+  </main>
+    
+  <aside>
+    
+    <h4>Character Encoding</h4>
+    
+    <details>
+      <summary>US ASCII</summary>
+      <p>7 Bits/128 Char</p>
+      <p>The characters encoded are numbers 0 to 9, lowercase letters a to z, uppercase letters A to Z, basic punctuation symbols, control codes that originated with Teletype machines, and space.  Anything you would find on a standard <a href="http://upload.wikimedia.org/wikipedia/commons/9/99/DEC_VT100_terminal.jpg" target="_blank">Terminal Keyboard</a>.</p>
+    </details>
+    <details>
+      <summary>EBCDIC</summary>
+      <p>8 Bits/255 Char</p>
+      <p>EBCDIC descended from the code used with punched cards and the corresponding six bit binary-coded decimal code used with most of IBM's computer peripherals of the late 1950s and early 1960s.</p>
+    </details>
+    <details>
+      <summary>UTF-8</summary>
+      <p>8 Bits/1,920 Char</p>
+      <p>UTF-8 has become the dominant character encoding for the World Wide Web, accounting for more than half of all Web pages. The Internet Mail Consortium (IMC) recommends that all e-mail programs be able to display and create mail using UTF-8. The W3C recommends UTF-8 as default encoding in their main standards (XML and HTML).</p>
+    </details>
+    <details>
+      <summary>More Encoding</summary>
+      <p>UTF-16 | 16 Bits/1,112,064 Char</p>
+      <p>UTF-32 | 32 Bits/A Ba-Gillion Char</p>
+    </details>
+    
+  </aside>
 
-Unlike <a href="http://www.huffingtonpost.com/2013/11/06/rand-paul-plagiarism_n_4226249.html" target="_blank">Senitor Paul Rand</a>, I'm going to try and source all of the different Wikipedia Pages about the differences of the various Charactor Sets.<br><br>
+  <footer>
+      <img src="images/Feature-Icon-Teton.png" alt="Montana Getaway">
+      <p>Copyright 2014: iMudder (aka Bruce Perry)</p>
+      <p><a href="http://www.w3schools.com/html/">* Code Sourced from the crazy mind of Bruce and  w3schools.com</a></p>
+    <cite>
+      <blockquote>
+        <p><a href="http://www.unicode.org/versions/Unicode6.0.0/" target="_blank">UTF Stands for U (Universal Character Set) Transformation Format</a></p>
+        <p><a href="http://en.wikipedia.org/wiki/ASCII#cite_note-1" target="_blank">ASCII Stands for American Standard Code for Information Interchange</a></p>
+        <p><a href="http://en.wikipedia.org/wiki/EBCDIC" target="_blank">EDCDIC Stands for Extended Binary Coded Decimal Interchange Code</a></p>
+      </blockquote>
+    </cite>
 
-        <table border=1 cellpadding="10">
-            <tr>
-                <th width="115" valign="top">
-                    Encoding /<br>Code Sequence
-                </th>
-                <th width="100" valign="top">
-                    # Bits
-                </th>
-                <th valign="top">
-                    # Charactors Available
-                </th>
-            </tr>
-            <tr>
-                <th valign="top">
-                    US ASCII
-                </th>
-                <th valign="top">
-                    7 Bits<br>128 Char
-                </th>
-                <th align="left" valign="top">
-The characters encoded are numbers 0 to 9, lowercase letters a to z, uppercase letters A to Z, basic punctuation symbols, control codes that originated with Teletype machines, and space.  Anything you would find on a standard <a href="http://upload.wikimedia.org/wikipedia/commons/9/99/DEC_VT100_terminal.jpg" target="_blank">Terminal Keyboard</a>.
-                </th>
-            </tr>
-            <tr>
-                <th valign="top">
-                    EBCDIC
-                </th>
-                <th valign="top">
-                    8 Bits<br>255 Char
-                </th>
-                 <th align="left" valign="top">
-EBCDIC descended from the code used with punched cards and the corresponding six bit binary-coded decimal code used with most of IBM's computer peripherals of the late 1950s and early 1960s.
-                </th>
-           </tr>
-            <tr>
-                <th valign="top">
-                    UTF-8
-                </th>
-                <th valign="top">
-                    8 Bits<br>1,920 Char
-                </th>
-                <th align="left" valign="top">
-UTF-8 has become the dominant character encoding for the World Wide Web, accounting for more than half of all Web pages. The Internet Mail Consortium (IMC) recommends that all e-mail programs be able to display and create mail using UTF-8. The W3C recommends UTF-8 as default encoding in their main standards (XML and HTML).
-                </th>
-            </tr>
-            <tr>
-                <th colspan="3" valign="top">
-                    UTF-16 (16 bits), UTF-32 (32 bits) ...
-                </th>
-            </tr>
-            <tr>
-                <td colspan="3">*Note - there are 8 Bits in a Byte, 1024 Bytes in a Kilobyte, 1024 Kilobytes in a Megabyte and 1024 Megabytes in a Gigabyte ... the pattern continues. <a href="http://www.whatsabyte.com/P1/byteconverter.htm" target="_blank">WhatsAByte.com</a><br><br>
-<a href="http://www.unicode.org/versions/Unicode6.0.0/" target="_blank">UTF Stands for U (Universal Character Set) Transformation Format</a><br>
-<a href="http://en.wikipedia.org/wiki/ASCII#cite_note-1" target="_blank">ASCII Stands for American Standard Code for Information Interchange</a><br>
-<a href="http://en.wikipedia.org/wiki/EBCDIC" target="_blank">EDCDIC Stands for Extended Binary Coded Decimal Interchange Code</a>
-                </td> 
-            </tr>
-        </table>
-        <br><br>
-        
-    </section> <!-- Source Wikipedia: http://en.wikipedia.org/wiki/Character_encoding -->
-   
-    <footer>
-        <table>
-            <th>
-                <img src="images/Feature-Icon-Teton.png" alt="Montana Getaway">
-            </th>
-            <th align="left" valign="top">
-                <p>
-                    <br>Copyright 2014: iMudder (aka Bruce Perry)<br>
-                    <a href="http://www.w3schools.com/html/">* Code Sourced from the crazy mind of Bruce and  w3schools.com</a>
-
-                </p>
-            </th>
-        </table>
-
-    </footer>
+  </footer>
 </body>    
 
 </html>
